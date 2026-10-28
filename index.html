@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Aiutiamo Alice · Padėkime Alice · Help Alice</title>
+  <meta name="description" content="Alice ha 5 anni, cittadinanza lituana, leucemia: serve un trapianto di midollo in Inghilterra. Obiettivo 690 €. Solo nome di battesimo; foto con volto parzialmente oscurato per proteggerla.">
+  <meta name="theme-color" content="#1d5a66">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="lt_LT">
+  <meta property="og:locale:alternate" content="en_IE">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:title" content="URGENTE — Aiutiamo Alice (5 anni, Lituania)">
+  <meta property="og:description" content="Leucemia · trapianto di midollo in Inghilterra · obiettivo 690 € · 1 € = meno di un caffè. Privacy: solo occhi e capelli nelle foto.">
+  <meta property="og:url" content="https://solinasfederic261288-arch.github.io/raccolta-alice/">
+  <meta property="og:image" content="https://solinasfederic261288-arch.github.io/raccolta-alice/images/alice-1.jpg">
+  <meta property="og:image:alt" content="Alice, 5 anni — volto parzialmente oscurato per privacy">
+  <link rel="canonical" href="https://solinasfederic261288-arch.github.io/raccolta-alice/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%99%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#storia">Vai al contenuto</a>
+
+  <aside class="urgenza" id="urgenza" aria-label="Urgente">
+    <div class="wrap urgenza-riga">
+      <p><strong>Urgente / Skubu / Urgent:</strong> Alice ha 5 anni e deve raggiungere l’Inghilterra per un trapianto di midollo. Mancano ancora <strong><span data-mancano>690 €</span></strong>: basterebbe <strong>1 €</strong> da <strong><span data-persone>690</span> persone</strong>.</p>
+      <a class="btn btn-urgenza" href="#dona">Dona ora</a>
+    </div>
+  </aside>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-titolo">
+        <div class="hero-top">
+          <p class="eyebrow">Raccolta fondi · Lietuva / Lithuania · Federico Solinas</p>
+          <nav class="lingua" aria-label="Lingua / Language / Kalba">
+            <a href="#it" lang="it" hreflang="it" title="Italiano">IT</a><span aria-hidden="true">|</span>
+            <a href="#lt" lang="lt" hreflang="lt" title="Lietuvių">LT</a><span aria-hidden="true">|</span>
+            <a href="#en" lang="en" hreflang="en" title="English">EN</a><span aria-hidden="true">|</span>
+            <a href="#ru" lang="ru" hreflang="ru" title="Русский">RU</a>
+          </nav>
+        </div>
+        <h1>Aiutiamo Alice · Padėkime Alice · Help Alice</h1>
+        <nav class="lang-jump" aria-label="Vai alla lingua">
+          <a href="#it">Italiano</a>
+          <a href="#lt">Lietuvių</a>
+          <a href="#en">English</a>
+          <a href="#ru">Кратко RU</a>
+        </nav>
+      </div>
+
+      <figure class="foto foto-hero" id="foto-alice">
+        <img src="images/alice-1.jpg" width="1080" height="798" alt="Alice, 5 anni: visibili solo occhi e capelli; resto del volto oscurato per privacy" fetchpriority="high">
+      </figure>
+
+      <div class="hero-corpo">
+        <p class="lead">Alice ha <strong>5 anni</strong>, cittadinanza <strong>lituana</strong> (nata in Lituania, area di Vilnius). Ha la <strong>leucemia</strong> e deve raggiungere l’<strong>Inghilterra</strong> per un <strong>trapianto di midollo osseo</strong>. Obiettivo: <strong>690&nbsp;€</strong> — anche <strong>1&nbsp;€</strong> è meno di un caffè.</p>
+
+        <div class="progresso" aria-labelledby="prog-titolo">
+          <h2 id="prog-titolo" class="sr-only">Avanzamento della raccolta</h2>
+          <p class="prog-cifre">
+            <span class="prog-raccolto" id="raccolto">0 €</span>
+            <span class="prog-obiettivo">raccolti su <span id="obiettivo">690 €</span></span>
+          </p>
+          <div class="barra" id="barra" role="progressbar" aria-valuemin="0" aria-valuemax="690" aria-valuenow="0" aria-label="Euro raccolti">
+            <div class="barra-riempimento" id="barra-riempimento"></div>
+          </div>
+          <p class="prog-nota"><span id="percentuale">0%</span> · <span id="mancano">mancano 690 €</span><span id="aggiornato"></span></p>
+        </div>
+
+        <p class="evidenza" id="obiettivo-raggiunto" hidden><strong>Obiettivo raggiunto.</strong> Grazie di cuore a tutti.</p>
+
+        <div class="cta">
+          <a class="btn btn-primario" href="#dona">Dona ora</a>
+          <a class="btn btn-secondario" href="#condividi">Condividi</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="foto" class="sezione sezione-chiara">
+      <div class="wrap stretto">
+        <h2>Alice · foto con privacy</h2>
+        <p class="nota-privacy" style="border:0;padding-top:0;margin-top:0">Nelle foto restano visibili <strong>solo occhi e capelli</strong>. Il resto del volto è <strong>deliberatamente oscurato</strong> (non è una maschera) per <strong>proteggerla da chi potrebbe sfruttare l’immagine di una bambina</strong> online. Niente cognomi, niente indirizzi, niente dati sensibili dei genitori.</p>
+        <div class="galleria">
+          <figure>
+            <img src="images/alice-1.jpg" width="1080" height="798" alt="Alice: occhi e capelli visibili, resto del volto oscurato" loading="lazy">
+            <figcaption>Alice, 5 anni. Sguardo stanco ma presente — il volto è oscurato per privacy.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/alice-2.jpg" width="1080" height="1440" alt="Alice in braccio al papà: volti oscurati salvo occhi di Alice e un bacio" loading="lazy">
+            <figcaption>Con il papà. Volti oscurati; resta solo un gesto di affetto.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/alice-3.jpg" width="1080" height="743" alt="Alice per mano con un adulto: volto oscurato sotto gli occhi" loading="lazy">
+            <figcaption>Per mano. Solo occhi e capelli restano riconoscibili.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="storia" class="sezione">
+      <div class="wrap stretto">
+
+        <article id="it" class="lang-section" lang="it">
+          <span class="lang-label">Italiano</span>
+          <h2>URGENTE — Aiutiamo Alice a partire per l’Inghilterra</h2>
+          <p>Alice ha <strong>5 anni</strong>, cittadinanza lituana (nata in Lituania / area di <strong>Vilnius</strong>). Ha la <strong>leucemia</strong> e deve raggiungere l’<strong>Inghilterra</strong> per un <strong>trapianto di midollo osseo</strong>.</p>
+          <p>I genitori sono italiani: <strong>Gianni</strong> e <strong>Francesca</strong>. Per orgoglio e riservatezza non vogliono esporsi pubblicamente: la raccolta è gestita da me, <strong>Federico Solinas</strong>.</p>
+          <p>Serve <strong>690&nbsp;€</strong>. Anche <strong>1&nbsp;€</strong> ciascuno è meno di un caffè — e per Alice può fare la differenza.</p>
+          <h3>Privacy (minore)</h3>
+          <p>Mostriamo solo il <strong>nome di battesimo</strong> (Alice) e foto in cui restano visibili <strong>solo occhi e capelli</strong>. Nascondiamo il resto del volto per <strong>proteggerla da chi potrebbe sfruttare l’immagine di una bambina</strong> (pedofili e usi malevoli online). Niente cognomi, niente indirizzi, niente dati sensibili dei genitori. Solo i nomi di battesimo: Gianni e Francesca.</p>
+          <h3>Come funzionano i soldi</h3>
+          <p>Le donazioni arrivano sul <strong>mio IBAN Revolut</strong> (banca lituana). Io giro subito i soldi alla famiglia e <strong>pubblico qui ogni ricevuta di bonifico</strong>. I genitori <strong>restituiranno</strong> quanto ricevuto quando potranno: questa raccolta è un ponte, non un regalo nascosto.</p>
+          <p class="firma">— Federico</p>
+        </article>
+
+        <hr style="border:0;border-top:1px solid var(--bordo);margin:2.5rem 0">
+
+        <article id="lt" class="lang-section" lang="lt">
+          <span class="lang-label">Lietuvių kalba</span>
+          <h2>SKUBU — Padėkime Alice išvykti į Angliją</h2>
+          <p>Alice — <strong>5 metų</strong> mergaitė, Lietuvos pilietė (gimusi Lietuvoje, <strong>Vilniaus</strong> kraštas). Jai diagnozuota <strong>leukemija</strong>; jai reikia <strong>kaulų čiulpų transplantacijos Anglijoje</strong>.</p>
+          <p>Tėvai italai: <strong>Gianni</strong> ir <strong>Francesca</strong>. Viešumo jie neieško — rinkliavą tvarko <strong>Federico Solinas</strong>.</p>
+          <p>Reikia <strong>690&nbsp;€</strong>. Net <strong>1&nbsp;€</strong> — pigiau nei kava, bet Alice tai gali padėti.</p>
+          <h3>Privatumas (vaikas)</h3>
+          <p>Rodome tik <strong>vardą</strong> (Alice) ir nuotraukas, kuriose matyti <strong>tik akys ir plaukai</strong>. Likusią veido dalį slepiame, kad <strong>apsaugotume vaiką nuo tų, kurie galėtų piktnaudžiauti vaiko atvaizdu</strong> (įskaitant pedofilus ir kenksmingą naudojimą internete). Be pavardžių, be adresų.</p>
+          <h3>Kaip veikia pinigai</h3>
+          <p>Parama ateina į <strong>mano Revolut IBAN</strong> (Lietuvos bankas). Pinigus iš karto pervedu šeimai ir <strong>čia skelbiu kiekvieną pavedimo kvitą</strong>. Tėvai <strong>grąžins</strong> sumą, kai galės.</p>
+          <p class="firma">— Federico</p>
+        </article>
+
+        <hr style="border:0;border-top:1px solid var(--bordo);margin:2.5rem 0">
+
+        <article id="en" class="lang-section" lang="en">
+          <span class="lang-label">English</span>
+          <h2>URGENT — Help Alice get to England</h2>
+          <p>Alice is <strong>5 years old</strong>, a Lithuanian citizen (born in Lithuania, <strong>Vilnius</strong> area). She has <strong>leukemia</strong> and needs to reach <strong>England</strong> for a <strong>bone marrow transplant</strong>.</p>
+          <p>Her parents are Italian: <strong>Gianni</strong> and <strong>Francesca</strong>. They prefer to stay private; this fundraiser is run by me, <strong>Federico Solinas</strong>.</p>
+          <p>We need <strong>€690</strong>. Even <strong>€1</strong> each is less than a coffee — and it can help Alice.</p>
+          <h3>Privacy (minor)</h3>
+          <p>We show only her <strong>first name</strong> (Alice) and photos where <strong>only eyes and hair</strong> remain visible. We hide the rest of her face to <strong>protect her from anyone who might exploit a child’s image</strong> (including predators and harmful online use). No surnames, no addresses, no sensitive family data. Parents’ first names only: Gianni and Francesca.</p>
+          <h3>How the money works</h3>
+          <p>Donations go to <strong>my Revolut IBAN</strong> (Lithuanian bank). I transfer the money to the family right away and <strong>publish every transfer receipt here</strong>. The parents will <strong>repay</strong> what they receive when they can: this is a bridge, not a hidden gift.</p>
+          <p class="firma">— Federico</p>
+        </article>
+
+        <hr style="border:0;border-top:1px solid var(--bordo);margin:2.5rem 0">
+
+        <article id="ru" class="lang-section ru-brief" lang="ru">
+          <span class="lang-label">Кратко (RU)</span>
+          <h2 style="font-size:1.35rem">СРОЧНО — Поможем Алисе</h2>
+          <p><strong>СРОЧНО.</strong> Алисе <strong>5 лет</strong> (Литва / <strong>Вильнюс</strong>). <strong>Лейкемия</strong>, нужна <strong>трансплантация костного мозга в Англии</strong>. Цель: <strong>690&nbsp;€</strong>. Даже <strong>1&nbsp;€</strong> — меньше чашки кофе.</p>
+          <p>Родители: <strong>Gianni</strong> и <strong>Francesca</strong> (только имена). Сбор ведёт <strong>Federico Solinas</strong>.</p>
+          <p>IBAN Revolut: <strong>LT22 3250 0455 6460 3133</strong>, назначение: <strong>Aiuto Alice Lituania</strong>. Каждая квитанция публикуется; родители вернут деньги, когда смогут. На фото видны только глаза и волосы — защита ребёнка от злоупотреблений в сети.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="dona" class="sezione sezione-chiara">
+      <div class="wrap stretto">
+        <h2>Come donare · Kaip paaukoti · How to donate</h2>
+        <p>Le donazioni arrivano a me, Federico. Giro subito i soldi alla famiglia e pubblico qui ogni ricevuta (vedi <a href="#trasparenza">Trasparenza</a>).</p>
+
+        <div class="card card-evidenza" id="card-revolut-tel">
+          <h3><span aria-hidden="true">📱</span> Revolut: invio dal telefono</h3>
+          <p>Se hai Revolut puoi inviare subito e senza commissioni al mio numero:</p>
+          <dl class="dati">
+            <div>
+              <dt>Numero Revolut</dt>
+              <dd class="iban-riga">
+                <span id="telefono-revolut" class="iban" data-campo="telefonoRevolut">+39 327 623 1454</span>
+                <button type="button" class="btn btn-piccolo" data-copia="telefonoRevolut" aria-describedby="telefono-revolut">Copia numero</button>
+              </dd>
+            </div>
+            <div>
+              <dt>Intestatario</dt>
+              <dd><span data-campo="intestatario">Federico Solinas</span></dd>
+            </div>
+          </dl>
+          <a class="btn btn-primario btn-pieno btn-revolut" id="revolut-link" href="#dona" rel="noopener noreferrer" target="_blank" hidden>Dona con Revolut</a>
+        </div>
+
+        <div class="card" id="card-revolut">
+          <h3><span aria-hidden="true">🏦</span> <span id="titolo-revolut">Bonifico sul conto Revolut (Lietuva)</span></h3>
+          <dl class="dati">
+            <div>
+              <dt>Intestatario / Gavėjas / Account holder</dt>
+              <dd><span data-campo="intestatario">Federico Solinas</span></dd>
+            </div>
+            <div>
+              <dt>IBAN</dt>
+              <dd class="iban-riga">
+                <span id="iban-revolut" class="iban" data-campo="ibanRevolut">LT22 3250 0455 6460 3133</span>
+                <button type="button" class="btn btn-piccolo" data-copia="ibanRevolut" aria-describedby="iban-revolut">Copia IBAN</button>
+              </dd>
+            </div>
+            <div>
+              <dt>Causale / Mokėjimo paskirtis / Reference</dt>
+              <dd class="iban-riga">
+                <span id="causale-revolut" data-campo="causale">Aiuto Alice Lituania</span>
+                <button type="button" class="btn btn-piccolo btn-leggero" data-copia="causale" aria-describedby="causale-revolut">Copia</button>
+              </dd>
+            </div>
+          </dl>
+          <div class="extra-sepa" id="extra-sepa">
+            <h4>Per bonifici da fuori area SEPA</h4>
+            <dl class="dati">
+              <div>
+                <dt>BIC / SWIFT</dt>
+                <dd class="iban-riga">
+                  <span id="bic-revolut" class="iban" data-campo="bicRevolut">REVOLT21</span>
+                  <button type="button" class="btn btn-piccolo btn-leggero" data-copia="bicRevolut" aria-describedby="bic-revolut">Copia BIC</button>
+                </dd>
+              </div>
+              <div>
+                <dt>Banca</dt>
+                <dd><span data-campo="bancaRevolut">Revolut Bank UAB</span></dd>
+              </div>
+              <div>
+                <dt>Indirizzo della banca</dt>
+                <dd><span data-campo="indirizzoBancaRevolut">Konstitucijos ave. 21B, 08130 Vilnius, Lithuania</span></dd>
+              </div>
+              <div>
+                <dt>BIC banca corrispondente</dt>
+                <dd class="iban-riga">
+                  <span id="bic-corrispondente" class="iban" data-campo="bicCorrispondente">CHASDEFX</span>
+                  <button type="button" class="btn btn-piccolo btn-leggero" data-copia="bicCorrispondente" aria-describedby="bic-corrispondente">Copia BIC</button>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <!-- nascosto: niente IBAN IT su questa pagina -->
+        <div class="card" id="card-banca" hidden>
+          <h3><span id="titolo-banca">Bonifico bancario</span></h3>
+          <span id="iban" data-campo="iban" hidden></span>
+          <span id="causale" data-campo="causale" hidden></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="trasparenza" class="sezione">
+      <div class="wrap stretto">
+        <h2>Trasparenza · Skaidrumas · Transparency</h2>
+        <p>Voglio che sia chiaro a tutti dove vanno i soldi.</p>
+        <ol class="passi">
+          <li><strong>Doni a Federico</strong> con Revolut o con un bonifico sul conto Revolut LT.</li>
+          <li><strong>Aggiorno il contatore</strong> su questa pagina.</li>
+          <li><strong>Giro subito i soldi alla famiglia</strong> di Alice.</li>
+          <li><strong>Pubblico qui ogni ricevuta</strong> di bonifico (dati personali oscurati per privacy). I genitori restituiranno quando potranno.</li>
+        </ol>
+
+        <div class="blocco-ricevuta" id="blocco-ricezione" hidden>
+          <h3>Donazioni ricevute</h3>
+          <div class="ricevuta" id="ricezione"></div>
+        </div>
+
+        <div class="blocco-ricevuta">
+          <h3>Ricevute dei bonifici alla famiglia</h3>
+          <div class="ricevuta" id="ricevuta">
+            <div class="ricevuta-attesa" id="ricevuta-attesa">
+              <span aria-hidden="true">🧾</span>
+              <p><strong>Ancora nessuna ricevuta</strong></p>
+              <p>Appena farò il primo bonifico alla famiglia, pubblicherò qui la ricevuta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="condividi" class="sezione sezione-chiara">
+      <div class="wrap stretto">
+        <h2>Condividi · Dalinkitės · Share</h2>
+        <p>Più persone vedono questa pagina, prima Alice può partire.</p>
+        <div class="share">
+          <a class="btn btn-share btn-whatsapp" id="share-whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a class="btn btn-share btn-facebook" id="share-facebook" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <button type="button" class="btn btn-share btn-link" id="share-copia">Copia link</button>
+          <button type="button" class="btn btn-share btn-nativo" id="share-nativo" hidden>Altro…</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap stretto">
+      <p>Raccolta organizzata da Federico Solinas. Solo il nome di battesimo di Alice è pubblico.</p>
+      <p>Per domande: <span id="contatto" data-campo="contatto">solinas.federic261288@gmail.com</span></p>
+      <p class="piccolo">Questo sito non usa cookie né strumenti di tracciamento. Foto con volto oscurato per proteggere una minore da usi malevoli online.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
